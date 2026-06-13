@@ -200,7 +200,7 @@ export default function Home() {
       }
     }).catch(() => {});
     fetch("/api/stats").then((r) => r.json()).then((d) => { if (d.success) setStats(d.data); }).catch(() => {});
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     return () => {

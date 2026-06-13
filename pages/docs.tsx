@@ -308,7 +308,7 @@ export default function Docs() {
             <span className="text-sm font-semibold text-amber-300">Notes</span>
           </div>
           <ul className="space-y-2 text-sm text-[#8b949e]">
-            <li>• All responses are JSON. Successful responses include <code className="text-amber-300 text-xs">"success": true</code>.</li>
+            <li>• All responses are JSON. Successful responses include <code className="text-amber-300 text-xs">&quot;success&quot;: true</code>.</li>
             <li>• The <code className="text-amber-300 text-xs">/api/stream</code> endpoint is SSE — it keeps the connection open and fires events when new emails arrive.</li>
             <li>• Email addresses are temporary. They may expire if the underlying upstream session expires.</li>
             <li>• Rate limits are enforced by the upstream provider. Be respectful with polling intervals.</li>
